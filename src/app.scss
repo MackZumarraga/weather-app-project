@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    height: 70vh;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
