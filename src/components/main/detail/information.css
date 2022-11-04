@@ -1,6 +1,5 @@
 .information {
   border: 1px solid black;
-  height: 80%;
   width: 90%;
   margin: auto;
   display: flex;
@@ -29,9 +28,13 @@
   flex-direction: column;
 }
 
+.weather-logo-container {
+  font-size: 120px;
+  color: purple;
+}
+
 .weather-code-def {
   margin: auto;
-  margin-top: 15px;
   margin-bottom: 25px;
 }
 
@@ -51,6 +54,10 @@
   font-size: 60px;
 }
 
+.feels-like {
+  margin-bottom: 30px;
+}
+
 .other-weather-info {
   display: flex;
   flex-direction: column;
@@ -60,6 +67,12 @@
 .other-weather-info .humidity {
   margin: 4px 4px 4px 4px;
 }
+.other-weather-info i {
+  margin-right: 7px;
+}
 .other-weather-info .wind-speed {
   margin: 4px 4px 4px 4px;
+}
+.other-weather-info i {
+  margin-right: 7px;
 }/*# sourceMappingURL=information.css.map */

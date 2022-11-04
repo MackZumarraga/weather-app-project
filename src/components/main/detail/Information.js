@@ -1,5 +1,8 @@
 import "./information.scss";
+import "./css/weather-icons.min.css"
 import { weatherCode } from "./weatherCode";
+import { weatherLogoMap } from "./weatherLogoMap";
+
 
 function Information({city, location, weather}) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -10,6 +13,9 @@ function Information({city, location, weather}) {
     const day = date.getDay();
     const dayOfWeek = days[day];
     const month = months[date.getMonth()];
+
+    const weatherCodeNum = weather.hourly ? weather.hourly.weathercode[hour] : 0;
+    const timeOfDay = 0 <= hour && hour <= 6 && 18 >= hour  && hour <= 23 ? "night" : "day";
 
     return (
       <div className="information">
@@ -29,11 +35,11 @@ function Information({city, location, weather}) {
 
         <div className="mid">
           <div className="mid-content">
-            <div className="weather-icon">
-              <img src="https://cdn.pixabay.com/photo/2013/07/13/12/12/snow-159390_960_720.png" alt="cloudy" width="100" height="100" />
+            <div className="weather-logo-container">
+              <i className={weatherLogoMap[weatherCodeNum][timeOfDay]}></i>
             </div>
             <div className="weather-code-def">
-              {weather.hourly ? weatherCode[weather.hourly.weathercode[hour]] : "hi"}
+              {weatherCode[weatherCodeNum]}
             </div>
           </div>
         </div>
@@ -49,10 +55,12 @@ function Information({city, location, weather}) {
           </div>
           <div className="other-weather-info">
             <div className="humidity">
+              <i className="wi wi-humidity"></i>
               Humidity: {weather.hourly ? weather.hourly.relativehumidity_2m[hour] + "%" : "hi"}
             </div>
             <div className="wind-speed">
-              Wind Speed: {weather.hourly ? weather.hourly.windspeed_10m[hour] + "Mph" : "hi"}
+              <i className="wi wi-strong-wind"></i>
+              Speed: {weather.hourly ? weather.hourly.windspeed_10m[hour] + "Mph" : "hi"}
             </div>
           </div>
         </div>
