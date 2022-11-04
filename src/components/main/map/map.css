@@ -4,4 +4,11 @@
   padding: 30px 30px 30px 30px;
   background-color: rgba(0, 0, 0, 0.2784313725);
   border-radius: 14px;
+}
+
+.map-element {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: "auto";
 }/*# sourceMappingURL=map.css.map */
