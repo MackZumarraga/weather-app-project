@@ -42,7 +42,7 @@ function App() {
       const currentWeather = await fetchWeather();
 
       if (currentWeather) {
-        // console.log(currentWeather);
+        console.log(currentWeather);
         setWeather(currentWeather);
       }
     }
