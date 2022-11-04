@@ -2,11 +2,11 @@ import Detail from "./detail/Detail";
 import Map from "./map/Map";
 import "./main.scss";
 
-function Main() {
+function Main({city, location, weather}) {
     return (
       <div className="main">
-        <Map />
-        <Detail />
+        <Map location={location}/>
+        <Detail city={city} location={location} weather={weather}/>
       </div>
     );
   }
