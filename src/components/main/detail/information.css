@@ -3,4 +3,63 @@
   height: 80%;
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  padding: 40px 10px 10px 25px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mid-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-code-def {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.low {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25%;
+}
+
+.temperature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.temperature {
+  margin: auto;
+  font-size: 60px;
+}
+
+.other-weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.other-weather-info .humidity {
+  margin: 4px 4px 4px 4px;
+}
+.other-weather-info .wind-speed {
+  margin: 4px 4px 4px 4px;
 }/*# sourceMappingURL=information.css.map */

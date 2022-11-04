@@ -15,7 +15,7 @@ function App() {
     // const response = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,weathercode,windspeed_10m,winddirection_10m&temperature_unit=fahrenheit`);
     // return response.data
     try {
-      const response = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,weathercode,windspeed_10m,winddirection_10m&temperature_unit=fahrenheit`);
+      const response = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,weathercode,windspeed_10m&temperature_unit=fahrenheit&windspeed_unit=mph`);
       return response.data;
     } catch (err) {
       throw err.response.data;
@@ -52,7 +52,7 @@ function App() {
 
       if (currentLocation) {
         setLocation(currentLocation);
-        // console.log(currentLocation)
+        console.log(currentLocation)
       }
     }
 
