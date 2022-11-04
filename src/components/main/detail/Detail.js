@@ -6,7 +6,7 @@ function Detail({city, location, weather}) {
     return (
       <div className="detail">
         <Information city={city} location={location} weather={weather} />
-        <Favorite />
+        {/* <Favorite /> */}
       </div>
     );
   }

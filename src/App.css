@@ -1,6 +1,11 @@
+html {
+  background-color: rgba(20, 20, 23, 0.729);
+}
+
 .App {
   display: flex;
   justify-content: center;
+  font-family: system-ui;
 }
 
 .app-container {

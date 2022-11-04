@@ -5,4 +5,6 @@
   width: 90%;
   margin: auto;
   padding: 10px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }/*# sourceMappingURL=main.css.map */

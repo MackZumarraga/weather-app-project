@@ -1,6 +1,9 @@
 .detail {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.2784313725);
+  border-radius: 84px;
+  color: ghostwhite;
+  min-width: 400px;
 }/*# sourceMappingURL=detail.css.map */

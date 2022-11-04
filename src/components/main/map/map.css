@@ -1,4 +1,7 @@
 .map {
   border: 1px solid black;
-  min-width: 60%;
+  min-width: 500px;
+  padding: 30px 30px 30px 30px;
+  background-color: rgba(0, 0, 0, 0.2784313725);
+  border-radius: 14px;
 }/*# sourceMappingURL=map.css.map */

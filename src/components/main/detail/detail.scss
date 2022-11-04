@@ -1,6 +1,11 @@
 .detail {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    background-color: #00000047;
+    border-radius: 84px;
+    color: ghostwhite;
+
+    min-width: 400px;
 }
