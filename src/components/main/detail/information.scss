@@ -1,5 +1,4 @@
 .information {
-    border: 1px solid black;
     width: 90%;
     margin: auto;
     display: flex;
@@ -8,14 +7,23 @@
 
 .top {
     display: flex;
-    padding: 40px 10px 10px 25px;
+    padding: 0px 10px 10px 25px;
+    .title {
+        font-size: 25px;
+    }
+    .date {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        .month-day {
+            font-size: 18px;
+            margin-bottom: 5px;
+            min-width: 100px;
+        }
+    }
 }
 
-.date {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
 
 .mid {
     display: flex;
@@ -43,27 +51,26 @@
     display: flex;
     justify-content: space-evenly;
     height: 25%;
+    .temperature-content {
+        display: flex;
+        flex-direction: column;
+        .temperature {
+            margin: auto;
+            font-size: 60px;
+        }
+        .feels-like {
+            margin-bottom: 30px;
+        }
+    }
 }
 
-.temperature-content {
-    display: flex;
-    flex-direction: column;
-}
 
-.temperature {
-    margin: auto;
-    font-size: 60px;
-}
-
-.feels-like {
-    margin-bottom: 30px;
-}
 
 .other-weather-info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    margin-top: 70px;
     .humidity {
         margin: 4px 4px 4px 4px;
     }

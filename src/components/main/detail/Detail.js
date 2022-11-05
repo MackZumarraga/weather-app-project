@@ -1,12 +1,10 @@
-import Favorite from "./Favorite";
 import Information from "./Information";
 import "./detail.scss";
 
-function Detail({city, location, weather}) {
+function Detail({ location, weather }) {
     return (
       <div className="detail">
-        <Information city={city} location={location} weather={weather} />
-        {/* <Favorite /> */}
+        <Information location={location} weather={weather} />
       </div>
     );
   }

@@ -1,10 +1,10 @@
-import "./information.scss";
-import "./css/weather-icons.min.css"
 import { weatherCode } from "./weatherCode";
 import { weatherLogoMap } from "./weatherLogoMap";
+import "./information.scss";
+import "./css/weather-icons.min.css"
 
 
-function Information({city, location, weather}) {
+function Information({ location, weather }) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -21,7 +21,7 @@ function Information({city, location, weather}) {
       <div className="information">
         <div className="top">
           <div className="title">
-            {location.results ? location.results[0].formatted_address : "hey"}
+            {location.results ? location.results[0].formatted_address : null}
           </div>
           <div className="date">
             <div className="month-day">
@@ -47,30 +47,24 @@ function Information({city, location, weather}) {
         <div className="low">
           <div className="temperature-content">
             <div className="temperature">
-              {weather.hourly ? weather.hourly.temperature_2m[hour] + "°F" : "hi"}
+              {weather.hourly ? weather.hourly.temperature_2m[hour] + "°F" : null}
             </div>
             <div className="feels-like">
-              Feels Like {weather.hourly ? weather.hourly.apparent_temperature[hour] + "°F" : "hi"}
+              Feels Like {weather.hourly ? weather.hourly.apparent_temperature[hour] + "°F" : null}
             </div>
           </div>
           <div className="other-weather-info">
             <div className="humidity">
               <i className="wi wi-humidity"></i>
-              Humidity: {weather.hourly ? weather.hourly.relativehumidity_2m[hour] + "%" : "hi"}
+              Humidity: {weather.hourly ? weather.hourly.relativehumidity_2m[hour] + "%" : null}
             </div>
             <div className="wind-speed">
               <i className="wi wi-strong-wind"></i>
-              Speed: {weather.hourly ? weather.hourly.windspeed_10m[hour] + "Mph" : "hi"}
+              Speed: {weather.hourly ? weather.hourly.windspeed_10m[hour] + "Mph" : null}
             </div>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
+  
       </div>
     );
   }

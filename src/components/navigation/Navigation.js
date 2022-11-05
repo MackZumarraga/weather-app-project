@@ -13,7 +13,7 @@ function Navigation({setCity}) {
     <div className="navigation">
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="New York City" onChange={(e) => setValue(e.target.value)} />
-        <button type="submit">Change Location</button>
+        <button type="submit">Update</button>
       </form>
     </div>
   );

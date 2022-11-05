@@ -1,5 +1,6 @@
 html {
-  background-color: rgba(20, 20, 23, 0.729);
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/23/16/17/clouds-5332997_960_720.jpg");
+  background-size: cover;
 }
 
 .App {
@@ -11,7 +12,6 @@ html {
 .app-container {
   width: 70%;
   height: 700px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }/*# sourceMappingURL=App.css.map */
