@@ -12,10 +12,12 @@ function Information({ location, weather }) {
     const hour = date.getHours();
     const day = date.getDay();
     const dayOfWeek = days[day];
+    const dayOfMonth = date.getDate();
     const month = months[date.getMonth()];
 
     const weatherCodeNum = weather.hourly ? weather.hourly.weathercode[hour] : 0;
     const timeOfDay = 0 <= hour && hour <= 6 && 18 >= hour  && hour <= 23 ? "night" : "day";
+
 
     return (
       <div className="information">
@@ -25,7 +27,7 @@ function Information({ location, weather }) {
           </div>
           <div className="date">
             <div className="month-day">
-              {month + " " + day}
+              {month + " " + dayOfMonth}
             </div>
             <div className="day-of-week">
               {dayOfWeek}
